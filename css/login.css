@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.back-button {
+    background: none;
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    border: 1px solid black;
+    padding: 10px 15px;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.back-button:hover {
+    cursor: pointer;
+    transition: .3s;
+    background: black;
+    color: white;
+}
