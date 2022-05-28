@@ -1,5 +1,5 @@
 <?php
-session_start();
+include 'header.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +47,13 @@ session_start();
                     <li class="nav-item"><a class="nav-link" href="#"><span class="material-symbols-outlined">
                                 shopping_cart
                             </span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="login.php">přihlásit</a></li>
+                    <?php
+                    if(isset($_SESSION['uzivatel_id'])){
+                        echo "<li class='nav-item'><a class='nav-link' href='logout.php'>odhlásit</a></li>";
+                    } else{
+                        echo "<li class='nav-item'><a class='nav-link' href='login.php'>přihlásit</a></li>";
+                    }
+                        ?>
                 </ul>
             </div>
         </div>

@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
 
@@ -16,7 +19,7 @@
 <body>
 
     <div class="text-center">
-        <form style="max-width: 400px; margin: auto;" class="mt-5">
+        <form style="max-width: 400px; margin: auto;" method="post" class="mt-5">
             <div>
                 <img width="100" src="assets/marijuana.png" alt="">
             </div>
@@ -60,10 +63,11 @@
             else
             {
                 $heslo = password_hash($_POST['password'], PASSWORD_DEFAULT);
+                $email = $_POST['email'];
                 Db::query('
-                    INSERT INTO uzivatele (username, password)
-                    VALUES (?, ?)
-                ', $_POST['username'], $heslo);
+                    INSERT INTO uzivatele (username, email,password, role)
+                    VALUES (?, ?, ?, "user")
+                ', $_POST['username'], $email,$heslo);
                 $_SESSION['uzivatel_id'] = Db::getLastId();
                 $_SESSION['uzivatel_username'] = $_POST['username'];
                 $_SESSION['uzivatel_role'] = "user";

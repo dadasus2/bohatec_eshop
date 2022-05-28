@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
 
@@ -16,7 +19,7 @@
 <body>
 
     <div class="text-center">
-        <form style="max-width: 400px; margin: auto;" class="mt-5">
+        <form style="max-width: 400px; margin: auto;" class="mt-5" method="post">
             <div>
                 <img width="100" src="assets/marijuana.png" alt="">
             </div>
@@ -45,8 +48,8 @@
         $_SESSION['uzivatel_id'] = $existuje['id'];
         $_SESSION['uzivatel_username'] = $existuje['username'];
         $_SESSION['uzivatel_role'] = $existuje['role'];
-        if($_SESSION['uzivatel_admin']==1){
-          header('Location: index.php?stranka=administrace');
+        if($_SESSION['uzivatel_role']== "admin"){
+          header('Location: admin.php');
           exit();
         }
         else{
