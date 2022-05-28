@@ -44,12 +44,12 @@ include 'header.php';
                     <li class="nav-item"><a class="nav-link" href="#services">Výhody</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Nabídka</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="material-symbols-outlined">
-                                shopping_cart
-                            </span></a></li>
                     
                     <?php
                     if(isset($_SESSION['uzivatel_id'])){
+                        echo "<li class='nav-item'><a class='nav-link' href=''><span class='material-symbols-outlined'>
+                        shopping_cart
+                            </span></a></li>";
                         echo "<li class='nav-item'><a class='nav-link' href='logout.php'>odhlásit</a></li>";
                     } else{
                         echo "<li class='nav-item'><a class='nav-link' href='login.php'>přihlásit</a></li>";
