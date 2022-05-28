@@ -47,6 +47,7 @@ include 'header.php';
                     <li class="nav-item"><a class="nav-link" href="#"><span class="material-symbols-outlined">
                                 shopping_cart
                             </span></a></li>
+                    
                     <?php
                     if(isset($_SESSION['uzivatel_id'])){
                         echo "<li class='nav-item'><a class='nav-link' href='logout.php'>odhlásit</a></li>";
@@ -63,7 +64,7 @@ include 'header.php';
         <div class="container">
             <div class="masthead-subheading">Vítejte na našem eshopu</div>
             <div class="masthead-heading text-uppercase">Weeds</div>
-            <a class="btn btn-primary btn-xl text-uppercase" href="#contact">Zajujali jsme vás?</a>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#contact">Zaujali jsme vás?</a>
         </div>
     </header>
     <!-- Services-->
