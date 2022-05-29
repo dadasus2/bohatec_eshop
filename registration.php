@@ -13,7 +13,7 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="css/login.css" rel="stylesheet" />
-    <title>Přihlášení</title>
+    <title>Registrace</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@ session_start();
             <input name="username" type="text" id="username" class="form-control" placeholder="Uživatelské jméno" required autofocus>
             <input name="email" type="text" id="emailAdress" class="form-control" placeholder="E-mail">
             <input name="password" type="password" id="password" placeholder="Heslo" class="form-control">
-            <input name="password_again" type="password" id="password" placeholder="Heslo" class="form-control">
+            <input name="password_again" type="password" id="password" placeholder="Heslo znova" class="form-control">
             <div class="mt-3">
                 <a href="login.php">Přihlásit..</a>
             </div>

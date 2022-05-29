@@ -19,7 +19,7 @@ if ($_SESSION['uzivatel_role'] != 'admin') {
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="css/admin.css" rel="stylesheet"/>
 
-    <title>Přihlášení</title>
+    <title>admin</title>
 </head>
 
 <body>
@@ -81,7 +81,7 @@ $products = Db::queryAll("SELECT * FROM zbozi");
         echo "<tr>";
         echo "<td>" . $product['id'] . "</td>";
         echo "<td>" . $product['nazev'] . "</td>";
-        echo "<td>" . $product['cena'] . "</td>";
+        echo "<td>" . $product['cena'] . " Kč</td>";
         echo "</tr>";
     }
 

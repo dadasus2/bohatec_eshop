@@ -47,7 +47,7 @@ include 'header.php';
                     
                     <?php
                     if(isset($_SESSION['uzivatel_id'])){
-                        echo "<li class='nav-item'><a class='nav-link' href=''><span class='material-symbols-outlined'>
+                        echo "<li class='nav-item'><a class='nav-link' href='cart.php'><span class='material-symbols-outlined'>
                         shopping_cart
                             </span></a></li>";
                         echo "<li class='nav-item'><a class='nav-link' href='logout.php'>odhlásit</a></li>";
