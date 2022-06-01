@@ -19,10 +19,15 @@ session_start();
 
 <body>
 
+<?php
+        require_once('Db.php');
+        Db::connect('127.0.0.1', 'bohatec_obchod', 'root', '');
+
+        
+?>
+
         <div class="text-center">
-
                 <h1 class="mt-3">Vybrané produkty</h1>
-
                 <div class="card" style="width: 18rem;">
                         <div class="card-body">
                                 <h5 class="card-title">Název produktu</h5>
