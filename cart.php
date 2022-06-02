@@ -26,16 +26,32 @@ session_start();
         
 ?>
 
-        <div class="text-center">
-                <h1 class="mt-3">Vybrané produkty</h1>
-                <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                                <h5 class="card-title">Název produktu</h5>
-                                <input type="number" id="ammount" name="ammount" value="1">
-                                <h6 class="card-text">cena</h6>
-                                <button type="button" class="btn btn-primary">Koupit</button>
+<div class="container mt-5 mb-5">
+            <div class="d-flex justify-content-center row">
+                <div class="col-md-8">
+                    <div class="p-2">
+                        <h4>Váš košík</h4>
+                        
+                    </div>
+                    <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded">
+                        <div class="mr-1"><img class="rounded" src="https://i.imgur.com/XiFJkhI.jpg" width="70"></div>
+                        <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">Basic T-shirt</span>
+                            
                         </div>
+                        <div class="d-flex flex-row align-items-center qty"><i class="fa fa-minus text-danger"></i>
+                                <button class="minus d-flex flex-row align-items-center qty">-</button>
+                            <input value="1" class="input text-grey mt-1 mr-1 ml-1"></div>
+                                <button class="plus d-flex flex-row align-items-center qty">+</button>
+                        <div>
+                            <h5 class="text-grey">199Kč</h5>
+                        </div>
+                        <div class="d-flex align-items-center"><i class="fa fa-trash mb-1 text-danger"></i></div>
+                    </div>
+                    
+                    
+                    <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded"><button class="btn btn-warning btn-block btn-lg ml-2 pay-button" type="button">Zaplatit</button></div>
                 </div>
+            </div>
         </div>
 
 

@@ -1,9 +1,54 @@
-.card {
-    margin-top: 40px;
+body {
+    font-family: 'Manrope', sans-serif;
+    background: #eee;
 }
 
-.text-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.size span {
+    font-size: 11px;
+}
+
+.color span {
+    font-size: 11px;
+}
+
+.product-deta {
+    margin-right: 70px;
+}
+
+
+
+.pay-button {
+    color: #fff;
+}
+
+.pay-button:hover {
+    color: #fff;
+}
+
+.pay-button:focus {
+    color: #fff;
+    box-shadow: none;
+}
+
+.text-grey {
+    color: #a39f9f;
+}
+
+.qty i {
+    font-size: 11px;
+}
+
+.minus,
+.plus {
+    border: none;
+    margin: 10px;
+}
+
+.plus {
+    margin-left: -10%;
+}
+
+.input {
+    margin: 0;
+    padding: 0;
 }

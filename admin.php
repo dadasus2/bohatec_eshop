@@ -30,9 +30,10 @@ Db::connect('127.0.0.1', 'bohatec_obchod', 'root', '');
 $users = Db::queryAll("SELECT * FROM uzivatele");
 $products = Db::queryAll("SELECT * FROM zbozi");
 ?>
-<table class="table">
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+<table class="table table-striped table-bordered">
     <thead>
-    <h1 class="text-center">Seznam uživatelů</h1>
+    <h1 class="mb-3 text-center">Seznam uživatelů</h1>
     <hr>
     <tr>
         <th scope="col">id</th>
@@ -62,10 +63,11 @@ $products = Db::queryAll("SELECT * FROM zbozi");
 
     }
     ?>
-
+    <img src=" alt="">
 </table>
+</div>
 
-<table class="table">
+<table class="table table-striped table-bordered">
     <thead>
     <h1 class="text-center">Seznam zboží</h1>
     <hr>

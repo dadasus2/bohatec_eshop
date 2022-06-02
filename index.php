@@ -28,6 +28,9 @@ include 'header.php';
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
+
+
+
 <body id="page-top">
 
     <!-- Navigation-->
@@ -44,7 +47,7 @@ include 'header.php';
                     <li class="nav-item"><a class="nav-link" href="#services">Výhody</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Nabídka</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
-                    
+
                     <?php
                     if(isset($_SESSION['uzivatel_id'])){
                         echo "<li class='nav-item'><a class='nav-link' href='cart.php'><span class='material-symbols-outlined'>
@@ -236,7 +239,7 @@ include 'header.php';
                     <div class="col-md-6">
                         <div class="form-group">
                             <!-- Name input-->
-                          <input class="form-control" name="jmeno" id="name" type="text" placeholder="Jméno *"
+                            <input class="form-control" name="jmeno" id="name" type="text" placeholder="Jméno *"
                                 data-sb-validations="required" />
                             <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                         </div>
