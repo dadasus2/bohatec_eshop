@@ -1,5 +1,9 @@
 <?php
 session_start();
+
+if(isset($_POST['buy'])){
+    echo $_POST['buy'];
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -23,7 +27,6 @@ session_start();
         require_once('Db.php');
         Db::connect('127.0.0.1', 'bohatec_obchod', 'root', '');
 
-        
 ?>
 
 <div class="container mt-5 mb-5">
@@ -76,4 +79,4 @@ session_start();
 
 </body>
 
-</html>
+</html

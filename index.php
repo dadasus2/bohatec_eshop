@@ -109,6 +109,7 @@ include 'header.php';
         </div>
     </section>
     <!-- Portfolio Grid-->
+    <form method="post">
     <section class="page-section bg-light" id="portfolio">
         <div class="container">
             <div class="text-center">
@@ -118,9 +119,9 @@ include 'header.php';
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <!-- Portfolio item 1-->
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                        <a class="portfolio-link" href="cart.php?pridat= ">
                             <div class="portfolio-hover">
-                                <input name="buy" type="button" class="portfolio-hover-content"><i
+                                <input name="buy" type="submit" class="portfolio-hover-content"><i
                                     class="fas fa-plus fa-3x"></i></input>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
@@ -134,7 +135,7 @@ include 'header.php';
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <!-- Portfolio item 2-->
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                        <a class="portfolio-link" href="#portfolioModal2">
                             <div class="portfolio-hover">
                                 <input name="buy" type="button" class="portfolio-hover-content"><i
                                     class="fas fa-plus fa-3x"></i></input>
@@ -150,7 +151,7 @@ include 'header.php';
                 <div class="col-lg-4 col-sm-6 mb-4">
                     <!-- Portfolio item 3-->
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                        <a class="portfolio-link" href="#portfolioModal3">
                             <div class="portfolio-hover">
                                 <<input name="buy" type="button" class="portfolio-hover-content"><i
                                         class="fas fa-plus fa-3x"></i></input>
@@ -166,7 +167,7 @@ include 'header.php';
                 <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
                     <!-- Portfolio item 4-->
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                        <a class="portfolio-link" href="#portfolioModal4">
                             <div class="portfolio-hover">
                                 <input name="buy" type="button" class="portfolio-hover-content"><i
                                     class="fas fa-plus fa-3x"></i></input>
@@ -182,7 +183,7 @@ include 'header.php';
                 <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
                     <!-- Portfolio item 5-->
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                        <a class="portfolio-link" href="#portfolioModal5">
                             <div class="portfolio-hover">
                                 <input name="buy" type="button" class="portfolio-hover-content"><i
                                     class="fas fa-plus fa-3x"></i></input>
@@ -198,7 +199,7 @@ include 'header.php';
                 <div class="col-lg-4 col-sm-6">
                     <!-- Portfolio item 6-->
                     <div class="portfolio-item">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                        <a class="portfolio-link" href="#portfolioModal6">
                             <div class="portfolio-hover">
                                 <input name="buy" type="button" class="portfolio-hover-content"><i
                                     class="fas fa-plus fa-3x"></i></input>
@@ -214,6 +215,7 @@ include 'header.php';
             </div>
         </div>
     </section>
+    </form>
     <!-- About-->
 
     <!-- Team-->
