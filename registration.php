@@ -37,10 +37,6 @@ session_start();
         </form>
     </div>
     <?php
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
-
     require_once('Db.php');
     Db::connect('127.0.0.1', 'bohatec_obchod', 'root', '');
     
@@ -50,6 +46,7 @@ session_start();
             $zprava = 'Hesla nesouhlasí';
         else
         {
+            //HLIDA registraci uzivatgele
             $existuje = Db::querySingle('
                 SELECT COUNT(*)
                 FROM uzivatele

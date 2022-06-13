@@ -1,0 +1,6 @@
+Ve svém eshopu na konopí CBD jsem se nejdřív pokusil vytvořit kontaktní formulář. To se mi nakonec vyřešit nepodařilo a nefunguje.
+Dále jsem vytvořil registraci uživatele, kde se do databáze zapíše zadané uživatelské jméno, e-mail, zahashované heslo a automaticky se
+uživateli přiřadí role user, kterou můžete ručně v databázi změnit na admin pro přistup do administrace eshopu. Pak je tam přihlášení, 
+pokud se přihlásí uživatel s rolí user, hodí ho to na hlavní stránku s produkty a zobrazí se mu košik, který byl skrytý, než se přihlásil.
+Pokud se přihlásí uživatel s rolí admin, přesměruje ho to na admin stránku kde může vidět seznam uživatelů a mazat jednotlivé uživatele 
+a seznam zboží zobrazeného na hlavní stránce. Zboží jsem ručně přidal do databáze. Košík se mi bohužel nepodařilo vyřešit.
